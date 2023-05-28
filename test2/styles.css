@@ -1,0 +1,167 @@
+@font-face {
+  font-family: Story;
+  src: url(StoryTelling-zGzG.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.parallax-1 {
+  font-family: 'Story', sans-serif;
+  font-size: 50px;
+  background-color: black;
+}
+
+.parallax-2 {
+  background-image: url('picture/1.png');
+  font-family: 'Story', sans-serif;
+  font-size: 50px;
+}
+
+.parallax-3 {
+  background-image: url('picture/2.png');
+  font-family: 'Story', sans-serif;
+  font-size: 50px;
+}
+
+.parallax-4 {
+  background-image: url('picture/3.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-5 {
+  background-image: url('picture/4.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-6 {
+  background-image: url('picture/5.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-7 {
+  background-image: url('picture/6.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-8 {
+  background-image: url('picture/7.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-9 {
+  background-image: url('picture/8.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.parallax-10 {
+  background-image: url('picture/9.png');
+  font-size: 50px;
+  font-family: 'Story', sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+
+@keyframes move-top-right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(50%, -50%);
+  }
+}
+
+.tornado-gif {
+  position: absolute;
+  right: 0;
+  top: 70%;
+  transform: translate(50%, -50%);
+  max-width: 100%;
+  animation: tornado-move 15s infinite;
+}
+
+@keyframes tornado-move {
+  0% {
+    transform: translate(50%, -50%);
+  }
+  50% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-150%, -50%);
+  }
+}
+
+.clouds-raining1 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.clouds-raining2 {
+  position: absolute;
+  right: 100px;
+  top: 17px;
+}
+
+.clouds-raining3 {
+  position: absolute;
+  right: 200px;
+  top: 20px;
+}
+
+.extend-ton {
+  position: absolute;
+  right: 20px;
+  top: 200px;
+  animation: expand-ton 10s infinite alternate;
+}
+
+@keyframes expand-ton {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+
+.move-text-top-right {
+  animation: move-top-right 1s forwards;
+
+}

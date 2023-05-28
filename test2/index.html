@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Storytelling Parallax Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="parallax parallax-1">
+    <h1 class="fade-in ">In 2018, a small town in the Midwest</h1>
+  </div>
+
+  <div class="parallax parallax-2">
+    <p1 class="fade-in ">There were many people, those people are villagers in the town.</p>
+  </div>
+
+  <div class="parallax parallax-3">
+    <img class="clouds-raining1" src="clouds-raining.gif" alt="">
+    <img class="clouds-raining2" src="clouds-raining.gif" alt="">
+    <img class="clouds-raining3" src="clouds-raining.gif" alt="">
+    
+    <p class="fade-in move-text-top-right">One day, there was a big storm above the sea.</p>
+  </div>
+
+  <div class="parallax parallax-4">
+    <img class="clouds-raining1" src="clouds-raining.gif" alt="">
+    <img class="clouds-raining2" src="clouds-raining.gif" alt="">
+    <img class="clouds-raining3" src="clouds-raining.gif" alt="">
+    <img class="extend-ton" src="tornado-joypixels.gif" alt="Tornado">
+    <p class="fade-in ">Not many hours from then, tornadoes are formed by those storms.</p>
+  </div>
+
+  <div class="parallax parallax-5">
+    <img class="tornado-gif" src="tornado-joypixels.gif" alt="Tornado">
+    <p class="fade-in move-text-top-right">The tornado moved on the land.</p>
+  </div>
+
+  <div class="parallax parallax-6">
+    <p class="fade-in move-text-top-right">It hit the town, and the village collapsed.</p>
+  </div>
+
+  <div class="parallax parallax-7">
+    <p class="fade-in move-text-top-right">Villagers were looking at those houses that collapsed.</p>
+  </div>
+
+  <div class="parallax parallax-8">
+    <p class="fade-in">They were talking together about how to overcome it.</p>
+  </div>
+
+  <div class="parallax parallax-9">
+    <p class="fade-in">Community members worked tirelessly to rebuild homes, businesses, and infrastructure.</p>
+  </div>
+
+  <div class="parallax parallax-10">
+    <p class="fade-in ">Through their resilience and determination, the town was able to overcome the challenges and emerge stronger than ever before.</p>
+  </div>
+
+  <script src="script.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB5VF55c2BRbOE61LfM8F7zpTPESFHxYCE",
+      authDomain: "storytornado.firebaseapp.com",
+      projectId: "storytornado",
+      storageBucket: "storytornado.appspot.com",
+      messagingSenderId: "708497238521",
+      appId: "1:708497238521:web:f2784744dbb00b03dc7528",
+      measurementId: "G-JQ4HVSS0BD"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
+</body>
+</html>
